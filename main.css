@@ -1,0 +1,318 @@
+@font-face {
+    font-display: swap; 
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/dm/dmserifdisplayv12latinregular.woff2") format("woff2"), 
+    url("./fonts/dm/dmserifdisplayv12latinregular.woff") format("woff"); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/karla/karlav24latinregular.woff2") format("woff2"), 
+    url("./fonts/karla/karlav24latinregular.woff") format("woff"); 
+}
+@font-face {
+    font-display: swap;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/karla/karlav24latin700.woff2") format("woff2"), 
+    url("./fonts/karla/karlav24latin700.woff") format("woff"); 
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Karla" , sans-serif;
+}
+
+.container{
+    width: 1150px ;
+    margin: 0 auto;
+    padding: 0 20px ;
+}
+
+/* site header begin  */
+
+.header-inner{
+    padding-top: 31px;
+    padding-bottom: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 25px;
+    margin-right: 33px;
+}
+.header-box {
+    display: flex;
+    align-items: center;
+}
+.header-item{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #837D88;
+}
+
+.header-item:hover{
+    color: #2C2830;
+}
+.header-link{
+    padding: 12px 28px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #2C2830;
+    background: #FFFFFF;
+    border: 1.5px solid #2C2830;
+}
+
+.header-link:hover{
+    color: #fff;
+
+    background-color: #2C2830;
+}
+
+/* site header end  */
+
+/* site section begin  */
+
+.site-section{
+    background-color: #2D2641;
+}
+
+.section-inner{
+    display: flex;
+    
+}
+
+.section-box{
+    width: 540px;
+    margin-top: 105px;
+    margin-right: 30px;
+}
+
+.section-image{
+    position: relative;
+    top: 185px;
+}
+.site-title{
+    margin-bottom: 16px;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.site-title::before{
+    content: "";
+    display: block;
+    margin-bottom: 63px;
+    width: 150px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.section-text{
+    margin-bottom: 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.section-button{
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+}
+
+.section-button:hover{
+    color: #2C2830;
+    background-color: #fff;
+}
+.bottom-section-inner{
+    margin-top: 305px
+}
+
+.bottom-title{
+    margin-bottom: 96px;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    color: #2C2830;
+}
+
+.bottom-title::before{
+    content: "";
+    display: block;
+    margin-bottom: 63px;
+    width: 150px;
+    height: 1px;
+    background: #C396C6;
+}
+
+.bottom-list{
+    margin-bottom: 158px;
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+
+.bottom-item-title{
+    margin-bottom: 16px;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #2C2830;
+}
+.bottom-item{
+    width: 350px;
+    
+}
+
+.bottom-item:nth-child(1) .bottom-item-title::before{
+    content: "";
+    margin-bottom: 32px;
+    width: 86px;
+    height: 86px;
+    display: block;
+    background-image: url(./images/bolt-image.png);
+}
+.bottom-item:nth-child(2) .bottom-item-title::before{
+    content: "";
+    margin-bottom: 32px;
+    width: 86px;
+    height: 86px;
+    display: block;
+    background-image: url(./images/dollar-image.png);
+}
+.bottom-item:nth-child(3) .bottom-item-title::before{
+    content: "";
+    margin-bottom: 32px;
+    width: 86px;
+    height: 86px;
+    display: block;
+    background-image: url(./images/people-header.png);
+}
+
+.bottom-item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #837D88;
+}
+
+.article-inner{
+    margin-bottom: 150px;
+    display: flex;
+    padding: 69px 80px 69px 81px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images/articlebg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article-title{
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.article-button{
+    padding: 12px 25px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+}
+.article-button:hover{
+    color: #2C2830;
+    background-color: #fff;
+}
+
+
+
+
+.site-footer{
+    background-color: #FAFAFA;
+    padding-top: 67px;
+    padding-bottom: 64px;
+}
+
+.footer-top-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    
+}
+
+.social-list{
+    display: flex;
+    list-style: none;
+    column-gap: 16px;
+}
+
+.footer-bottom-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list{
+    list-style: none;
+    
+}
+
+.footer-line{
+    background: #DADADA;
+    margin-bottom: 48px;
+}
+
+.footer-list-title{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #837D88;
+}
+
+.footer-item{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2D2641;
+}
+
+.footer-item:nth-child(1){
+    margin-top: 36px;
+}
